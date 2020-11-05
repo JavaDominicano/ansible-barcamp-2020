@@ -1,0 +1,12 @@
+[proxy]
+192.168.1.238
+#192.168.1.238 haproxy_width_stats=True haproxy_with_auth=False haproxy_user=admin haproxy_password=12345
+
+[webserver]
+192.168.1.238
+
+[proxy:vars]
+haproxy_width_stats=True
+haproxy_with_auth=False
+haproxy_user=admin
+haproxy_password=12345

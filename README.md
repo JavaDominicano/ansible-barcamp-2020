@@ -10,3 +10,6 @@ ansible proxy -i host -m ping
 ansible proxy -i host -m setup | less
 ansible proxy -i host -m setup -a "filter=ansible_distribution*"
 ```
+
+### Recursos
+- https://docs.ansible.com/ansible/latest/index.html

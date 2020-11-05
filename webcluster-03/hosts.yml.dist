@@ -1,0 +1,16 @@
+# HAProxy
+proxy:
+  vars:
+    haproxy_width_stats: true
+    haproxy_with_auth: false
+    haproxy_user: admin
+    haproxy_password: 12345
+
+  hosts:
+    192.168.1.238:
+
+# Nginx Servers
+webserver:
+  hosts:
+    192.168.1.238:
+    192.168.1.248:
