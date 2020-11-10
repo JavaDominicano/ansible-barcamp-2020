@@ -45,7 +45,11 @@ listen stats
 {% endif %}
 
 frontend webserver
+<<<<<<< HEAD
     bind *:80
+=======
+    bind *:8080
+>>>>>>> 52514467dd10ffbab765baf3abdff2dfad88a9c7
     mode http
     default_backend webserver-backend
 
@@ -53,5 +57,9 @@ backend webserver-backend
     mode http
     balance roundrobin
 {% for node in groups['webservers'] %}
+<<<<<<< HEAD
     server {{ node }} {{ hostvars[node]['ansible_host'] }}:80 check
+=======
+    server webserver_{{ node | replace('.', '-') }} {{ node }}:80 check
+>>>>>>> 52514467dd10ffbab765baf3abdff2dfad88a9c7
 {% endfor %}
