@@ -1,0 +1,14 @@
+[proxies]
+proxy01 ansible_host=192.168.1.239
+#192.168.1.238 haproxy_width_stats=True haproxy_with_auth=False haproxy_user=admin haproxy_password=12345
+
+[webservers]
+nginx-01 ansible_host=192.168.1.243
+nginx-02 ansible_host=192.168.1.253
+nginx-03 ansible_host=192.168.1.249
+
+[proxy:vars]
+haproxy_width_stats=True
+haproxy_with_auth=False
+haproxy_user=admin
+haproxy_password=12345

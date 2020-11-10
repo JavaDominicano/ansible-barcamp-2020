@@ -1,0 +1,21 @@
+---
+- name: Configurando el cluster
+  hosts: proxies
+
+  tasks:
+    - name: Instalando HAProxy
+      apt:
+        update_cache: yes
+        pkg:
+          - haproxy
+
+    - name: Configurando HAProxy
+      template:
+          src: etc/haproxy/haproxy.cfg.j2
+          dest: /etc/haproxy/haproxy.cfg
+
+    - name: Iniciando y habilitando HAProxy
+      systemd:
+          name: haproxy
+          state: restarted
+          enabled: yes
