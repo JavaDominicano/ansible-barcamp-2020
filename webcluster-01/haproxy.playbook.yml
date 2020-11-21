@@ -4,7 +4,7 @@
 
   tasks:
     - name: Instalando HAProxy y Nginx
-      apt: 
+      apt:
         update_cache: yes
         pkg:
           - haproxy
@@ -12,17 +12,17 @@
 
     - name: Configurando HAProxy
       copy:
-          src: etc/haproxy/haproxy.cfg
-          dest: /etc/haproxy/haproxy.cfg
-          
+        src: etc/haproxy/haproxy.cfg
+        dest: /etc/haproxy/haproxy.cfg
+
     - name: Iniciando y habilitando HAProxy
       systemd:
-          name: haproxy
-          state: restarted
-          enabled: yes
+        name: haproxy
+        state: restarted
+        enabled: yes
 
     - name: Iniciando y habilitando Nginx
       systemd:
-          name: nginx
-          state: restarted
-          enabled: yes
+        name: nginx
+        state: restarted
+        enabled: yes
