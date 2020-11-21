@@ -9,4 +9,4 @@ Usando:
 - Plantillas
 - Variables
 
-- [Ir atras](../README.md)
+[Ir atras](../README.md)

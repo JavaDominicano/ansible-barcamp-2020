@@ -7,4 +7,4 @@ Usando:
 - Inventario (Formatato INI)
 - Simple Playbook
 
-- [Ir atras](../README.md)
+[Ir atras](../README.md)
