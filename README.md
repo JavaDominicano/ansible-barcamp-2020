@@ -19,11 +19,11 @@ pip3 install ansible
 ### Ad hoc command
 ```shell
 # verify if the hosts are reachable
-ansible proxy -i host -m ping
+ansible webservers -i hosts.yml -m ping
 
 # get hosts facts
-ansible proxy -i host -m setup | less
-ansible proxy -i host -m setup -a "filter=ansible_distribution*"
+ansible webservers -i hosts.yml -m setup | less
+ansible webservers -i hosts.yml -m setup -a "filter=ansible_distribution*"
 ```
 
 ### Demo
