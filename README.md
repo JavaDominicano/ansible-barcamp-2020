@@ -1,16 +1,16 @@
 # ansible-barcamp-2020
 Ansible Demo BarCamp 2020
 
-> Nota: Todas estás pruebas fueron ejecutadas en Debian version 10 y ansible 2.10.3
+> Nota: Todas estás pruebas fueron ejecutadas en Debian versión 10 usando ansible 2.10.3
 
-### Instalacion de Ansible
-> Nota: Ansible solo hay que instalarlo en servidor controlador.
+### Instalación de Ansible
+> Nota: Ansible debe ser instalado solo en el servidor controlador.
 
 ```shell
-# Instalar el instalador de paquetes de python pip
+# Instalar el manejador de paquetes de python
 apt install python3-pip
 
-# mediante pip instalar ansible (Manera que recomiendo)
+# mediante pip instalamos ansible (Forma recomendada)
 pip3 install ansible
 ```
 [Documentación oficial instalación Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
