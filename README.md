@@ -35,3 +35,9 @@ ansible webservers -i hosts.yml -m setup -a "filter=ansible_distribution*"
 
 ### Recursos
 - https://docs.ansible.com/ansible/latest/index.html
+
+### Extra info
+
+- This code was use as a demostration on the [BarCamp 2020](https://barcamp.org.do/) presented y [@hectorvent](https://github.com/hectorvent/hectorvent)
+- Google slide document can be download [here](https://docs.google.com/presentation/d/18_DYIh5jJI_1FvUvS_oaOnfDmLPneRRBTGjbdMrvSoY/edit#slide=id.gab478922d9_0_98)
+
