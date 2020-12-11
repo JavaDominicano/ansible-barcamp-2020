@@ -31,6 +31,7 @@ ansible webservers -i hosts.yml -m setup -a "filter=ansible_distribution*"
 - [Demo 01](webcluster-01/README.md)
 - [Demo 02](webcluster-02/README.md)
 - [Demo 03](webcluster-03/README.md)
+![Demo 03](webcluster-03/demo_03.png)
 
 ### Recursos
 - https://docs.ansible.com/ansible/latest/index.html
